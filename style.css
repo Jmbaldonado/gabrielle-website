@@ -1,0 +1,119 @@
+.navbar-custom,
+.footer-custom,
+.helper-custom {
+  background-color: #b94d5c;
+}
+.img-logo {
+    width: 50px;
+    height: 50px;
+    
+}
+.hero {
+    position: relative;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-title {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.accent {
+    color: #ffd8d5;
+}
+
+.accent-dark {
+    color: #621122;
+}
+
+.about-me-img {
+    width: 500px;
+    height: 500px;
+}
+
+.about-me-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.advocacy-bg {
+    background-color: #621122;
+    color: #fff;
+}
+
+.icons {
+    font-size: 14px;
+}
+
+.scroll {
+    display: none;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.scroll:active {
+    background-color: #212529;
+}
+
+.btnFade-in {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeIn;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnFade-out {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: FadeOut;
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
